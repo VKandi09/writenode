@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+body {
+  background: linear-gradient(135deg, #fdfcfb, #e2dec3);
+}
+
 /* Header Component */
 header{
   height: 70px;
@@ -35,7 +39,7 @@ header{
 }
 
 .nav .link.active{
-  background-color: #F2EBE9;
+  background-color: #b9b6afde;
   border-radius: 5px;
 }
 
@@ -45,9 +49,13 @@ header{
   margin-left: 10px;
   padding: 10px;
   font-size: 16px;
-  background-color: #1C59AE;
+  background-color: #69614ade;
   color: #ffffff;
   cursor: pointer;
+}
+
+.nav .auth:hover {
+  background-color: #726249c2;
 }
 
 .nav .auth i{
@@ -65,8 +73,14 @@ header{
 .card{
   border-radius: 5px;
   padding: 10px;
-  box-shadow: #F2EBE9 0px 1px 4px;
+  box-shadow: #7a7058 -4px 8px 10px;
   margin: 20px 5px;
+  background-color: #d3cebe;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card .title{
@@ -90,7 +104,7 @@ header{
 .card .author {
   font-size: 14px;
   font-weight: 500;
-  background-color: #1c59ae13;
+  background-color: #69614ade;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -119,9 +133,15 @@ header{
   margin: 10px 0px;
   padding: 10px;
   border-radius: 5px;
-  border: 0px;
+  border: 2px solid transparent;
   box-shadow: #F2EBE9 0px 1px 4px;
+  background-color: #cbc4b5d7;
+  transition: border-color 0.3s ease;
+}
 
+.createPost .title:focus {
+  border-color: #7b693fd7;
+  outline: none;
 }
 
 .createPost .description{
@@ -129,20 +149,31 @@ header{
   margin: 10px 0px;
   padding: 10px;
   border-radius: 5px;
-  border: 0px;
+  border: 2px solid transparent;
   box-shadow: #F2EBE9 0px 1px 4px;
   height: 300px;
+  background-color: #cbc4b5d7;
+  transition: border-color 0.3s ease;
+}
+
+.createPost .description:focus {
+  border-color: #7b693fd7;
+  outline: none;
 }
 
 .createPost button{
   font-size: 18px;
   margin: 10px 0px;
   padding: 15px 20px;
-  background-color: #5FD068;
+  background-color: #7b693fd7;
   border: 0px;
   border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
+}
+
+.createPost button:hover {
+  background-color: #9a917cd7;
 }
 
 

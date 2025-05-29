@@ -3,6 +3,7 @@ import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useEffect, useState, useRef } from "react";
 import { useTitle } from "../hooks/useTitle";
+import dbPosts from "../data/db.json";
 
 export const HomePage = () => {
   const [ posts, setPosts ] = useState(new Array(2).fill(false));
@@ -13,9 +14,13 @@ export const HomePage = () => {
   useEffect(() => {
     async function getPosts(){
       const data = await getDocs(postsRef.current);
-      setPosts(data.docs.map((doc) => (
-        {...doc.data(), id: doc.id}
-      )));
+      const firebasePosts = data.docs.map((doc) => (
+        {
+          ...doc.data(), 
+          id: doc.id
+        }
+      ));
+      setPosts([...dbPosts, ...firebasePosts]);
     }
     getPosts();
   }, [toggle, postsRef]);

@@ -1,0 +1,43 @@
+[
+    {
+        "author" : {
+            "id": "101",
+            "name": "Jane Doe"
+        },
+        "title": "Why Frontend Matters",
+        "description": "An overview of the role frontend development plays in modern web applications and how it shapes user experience."
+    },
+    {
+        "author" : {
+            "id": "102",
+            "name": "John Smith"
+        },
+        "title": "The Art of Clean Code",
+        "description": "Clean code isn’t just good practice—it’s a mindset. Here are tips and principles to write code that lasts."
+    },
+    {
+        "author" : {
+            "id": "103",
+            "name": "Ava Nguyen"
+        },
+        "title": "From Idea to MVP",
+        "description": "Explore the journey of turning a raw idea into a minimum viable product with modern tools and frameworks."
+    },
+    {
+        "author" : {
+            "id": "104",
+            "name": "Liam Patel"
+        },
+        "title": "Styling with Emotion",
+        "description": "A quick guide to using Emotion in React projects for scalable, themeable, and dynamic styling."
+    },
+    {
+        "author" : {
+            "id": "105",
+            "name": "Noah Kim"
+        },
+        "title": "State Management Simplified",
+        "description": "Redux, Zustand, or Context? Let's break down when and why to use each for managing state in React apps."
+    }
+  ]
+  
